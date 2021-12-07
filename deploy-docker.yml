@@ -21,8 +21,8 @@
         state: present
     - name: Start the container
       docker_container:
-        name: misapp
-        image: "skalaiva/misapp:{{DOCKER_TAG}}"
+        name: mossapp
+        image: "skalaiva/mossapp:{{DOCKER_TAG}}"
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
